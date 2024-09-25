@@ -1,0 +1,12 @@
+﻿<form asp-action="SaveFile" method="post">
+    <div>
+        
+        <label for="Content">Enter Content</label>
+        <hr />
+        <textarea id="Content" name="Content" rows="5" cols="40">@ViewBag.FileContent</textarea>
+    </div>
+    <div>
+        <input type="text" id="Name" name="Name" value="@ViewBag.FileName" />
+        <button type="submit">Submit</button>
+    </div>
+</form>
